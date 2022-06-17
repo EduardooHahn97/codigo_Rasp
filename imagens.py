@@ -6,7 +6,8 @@ inicio = time.time()
 x = 0
 
 print("entrou no while, decodificando")
-teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im30.png')
+#teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im30.png')
+teste = cv2.imread('/home/pi/Desktop/projeto/codigo_Rasp/im30.png')
 data, _, _ = detector.detectAndDecode(teste)
 fim = time.time()
 print(fim - inicio)
@@ -20,7 +21,8 @@ else :
 print(x, " vezes")
 
 print("entrou no while, decodificando")
-teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im70.png')
+#teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im70.png')
+teste = cv2.imread('/home/pi/Desktop/projeto/codigo_Rasp/im70.png')
 data, _, _ = detector.detectAndDecode(teste)
 fim = time.time()
 print(fim - inicio)
@@ -34,7 +36,8 @@ else :
 print(x, " vezes")
 
 print("entrou no while, decodificando")
-teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im100.png')
+#teste = cv2.imread('C:\\Users\\eduar\\Documents\\UFSC\\Fase 10\\TCC2\\codigo_Rasp\\im100.png')
+teste = cv2.imread('/home/pi/Desktop/projeto/codigo_Rasp/im100.png')
 data, _, _ = detector.detectAndDecode(teste)
 fim = time.time()
 print(fim - inicio)
