@@ -1,6 +1,7 @@
 #most importantly for this code to run is to import OpenCV which we do in the below line
 import cv2
 import time
+import requests
 
 
 
@@ -35,6 +36,12 @@ while x < 101:
         #You can also add content to before the pass. Say the system reads red it'll activate a Red LED and the same for Green.
     if data:
         print("data found: ", data, x)
+        print('http://192.168.56.1/servidor/gravar.php?texto='+data)
+        resposta = requests.get('http://192.168.56.1/servidor/gravar.php?texto='+data)
+        if resposta.status_code == 200 :
+            print("gravou")
+        else : 
+            print("nao gravou")
     else :
         print("segue o baile, pq nao encontramos QRCODE")
         
